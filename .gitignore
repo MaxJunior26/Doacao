@@ -1,14 +1,15 @@
 
-public class Empresa extends Doacao{
+public class Individual extends Doacao{
 
-	Empresa(double v){
+	Individual(double v){
 
 		super(v);
 
 	}
+	
 	double getFundo(){
 		
-		return valor - valor*10/100;
+		return valor - valor*5/100;
 		
 	}
 
