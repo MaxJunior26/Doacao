@@ -1,23 +1,39 @@
-# Compiled class file
-*.class
 
-# Log file
-*.log
+public class Main {
+	
+	public static void main (String[] args) {
+		
+		//Relatorio rel = new Relatorio();
+		//rel.imprimeFundoPorCandidato(candidato);
+		Candidato candidato = new Candidato("Marina", 1);		
+		Candidato candidato2 = new Candidato("Bolsonaro", 2);
+		
+		Doacao doacao = new Individual(100);
+		//doacao.valor = 100;
+		//doacao.tipo = 1;
+		candidato.doacoes.add(doacao);
+		
+		Doacao doacao2 = new Empresa(1000);
+		//doacao2.valor = 1000;
+		//doacao2.tipo = 2;
+		candidato.doacoes.add(doacao2);
+		
+		Doacao doacao3 = new ONG(2000);
+		//doacao3.valor = 2000;
+		//doacao3.tipo = 3;
+		candidato.doacoes.add(doacao3);
+		
+		System.out.println("Relatorio\n*******************");
+		//System.out.println(candidato.nome + " | " + candidato.numero);
+		System.out.println(candidato);
+		Relatorio.imprimeFundoPorCandidato(candidato);
+		System.out.println(candidato2);
+		Relatorio.imprimeFundoPorCandidato(candidato2);
+		
+		
+		
+		System.out.print("Fim");
+		
+	}
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
