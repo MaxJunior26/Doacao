@@ -1,16 +1,15 @@
 
-public class Doacao {
+public class Empresa extends Doacao{
 
-	public double valor;
+	Empresa(double v){
 
-	Doacao(double v){
-		
-		this.valor = v;
-		
+		super(v);
+
 	}
 	double getFundo(){
 		
-		return valor;
+		return valor - valor*10/100;
 		
 	}
+
 }
