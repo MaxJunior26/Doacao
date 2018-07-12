@@ -1,16 +1,10 @@
 
-public class Individual extends Doacao{
+public class ONG extends Doacao{
 
-	Individual(double v){
+	ONG(double v){
 
 		super(v);
 
-	}
-	
-	double getFundo(){
-		
-		return valor - valor*5/100;
-		
 	}
 
 }
